@@ -10,7 +10,7 @@
     "prepublishOnly": "npm run compile",
     "test": "mocha --config '.mocha.yml'",
     "lint": "tslint src/**/*.ts",
-	"postinstall": "npm run compile"
+	"prepack": "npm i && npm run compile"
   },
   "repository": {
     "type": "git",
